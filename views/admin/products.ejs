@@ -3,9 +3,11 @@
     </head>
 
     <body>
-        <%- include('../includes/navigation.ejs') %>
+        
 
             <main>
+            <div class="page-content-wrapper">
+            <div class="page-content">
                 <% if (prods.length > 0) { %>
                     <div class="grid">
                         <% for (let product of prods) { %>
@@ -39,5 +41,7 @@
                     <% } else { %>
                         <h1>No Products Found!</h1>
                         <% } %>
+            </div>
+            </div>
             </main>
             <%- include('../includes/end.ejs') %>
